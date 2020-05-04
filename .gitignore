@@ -2,3 +2,4 @@
 *.pyd
 .vscode
 venv
+.coverage

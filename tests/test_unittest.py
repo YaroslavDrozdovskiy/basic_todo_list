@@ -1,3 +1,8 @@
+import sys
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(BASE_DIR)
+
 import unittest
 import datetime
 
@@ -48,7 +53,6 @@ class CreateTask(unittest.TestCase):
         text = TASK_TEXT
         task = service.create_task(date, text)
         self.assertIsNone(task)
-import sys
 
 if __name__ == '__main__':
     unittest.main()
